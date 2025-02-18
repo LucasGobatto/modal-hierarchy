@@ -24,8 +24,6 @@ export function ModalProvider({ children }: { children: React.ReactNode }) {
   const [modalQueue, setModalQueue] = useState<ModalType[]>([]);
   const [currentModal, setCurrentModal] = useState<ModalType | null>(null);
 
-  console.log(modalQueue);
-
   const addToQueue = useCallback(
     (modal: ModalType) => {
       setModalQueue((prev) => {
