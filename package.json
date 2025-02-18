@@ -1,0 +1,41 @@
+{
+  "name": "front",
+  "version": "0.0.1",
+  "main": "src/index.tsx",
+  "scripts": {
+    "start": "vite --host --port 4000",
+    "build": "vite build",
+    "build:stg": "vite build --mode staging",
+    "preview": "npm run build && npx vite preview --port 4001 --host",
+    "type-check": "tsc --noEmit"
+  },
+  "author": "LucasGobatto",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.13.5",
+    "@emotion/styled": "^11.13.5",
+    "@mui/material": "^6.1.9",
+    "@tanstack/react-query": "^5.62.2",
+    "@types/luxon": "^3.4.2",
+    "axios": "^1.7.8",
+    "luxon": "^3.5.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^5.4.0",
+    "react-router-dom": "6.22.3",
+    "reflect-metadata": "0.2.2",
+    "styled-components": "6.1.8",
+    "typedi": "0.10.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.48",
+    "@types/react-dom": "18.2.18",
+    "@vitejs/plugin-react": "4.2.1",
+    "eslint": "8.56.0",
+    "eslint-plugin-react": "7.33.2",
+    "eslint-plugin-react-refresh": "0.4.5",
+    "typescript": "5.3.3",
+    "vite": "5.0.12",
+    "vite-tsconfig-paths": "4.3.1"
+  }
+}

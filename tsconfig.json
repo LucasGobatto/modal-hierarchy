@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["esnext", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": "src",
+    "paths": {
+      "@components": ["./components"],
+      "@components/*": ["./components/*"],
+      "@assets": ["./assets"],
+      "@assets/*": ["./assets/*"],
+      "@pages": ["./pages"],
+      "@pages/*": ["./pages/*"],
+      "@sections": ["./sections"],
+      "@sections/*": ["./sections/*"],
+      "@core": ["./core"],
+      "@core/*": ["./core/*"],
+      "@data": ["./data"],
+      "@data/*": ["./data/*"],
+      "@hooks": ["./hooks"],
+      "@hooks/*": ["./hooks/*"]
+    }
+  },
+  "include": ["src", "vite.config.ts"],
+  "compileOnSave": false,
+  "references": [{ "path": "./tsconfig-node.json" }]
+}
