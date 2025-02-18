@@ -1,6 +1,6 @@
 import { FirstModal } from '@components/modal/FirstModal';
-import { useCallback } from 'react';
 import { ModalPriority, useModal } from 'context/ModalContext';
+import { useCallback } from 'react';
 
 export const useRegisterFirstModal = () => {
   const { addToQueue, removeFromQueue } = useModal();
